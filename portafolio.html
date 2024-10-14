@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portafolio.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>portafolio</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+         <input type="checkbox" id="checkbox">
+             <label for="checkbox" class="toggle">
+                    <div class="bars" id="bar1"></div>
+                     <div class="bars" id="bar2"></div>
+                     <div class="bars" id="bar3"></div>
+                 </label>
+            <ul>
+                <li><a href="#">about me</a></li>
+                <li><a href="#proyectos">Proyects</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about-me">
+        <div class="about-text">
+            <h1>I´m Gonzalo Gewerc</h1>
+            <p>Soy un desarrollador web apasionado por crear experiencias digitales. Tengo experiencia en HTML, CSS, y JavaScript, y siempre busco aprender más.</p>
+            <a href="CV--GonzaloGewerc.pdf" target="_blank" download="CV--GonzaloGewerc" class="btn">Descargar CV</a>
+        </div>
+        <div class="about-photo">
+            <img src="mifoto.jpg" alt="Mi Foto">
+        </div>
+    </section>
+
+
+
+
+
+
+    <section id="proyectos" class="proyectos">
+        <h2>Proyectos realizados</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <a href="../html/tiendaderopa2.html">
+                    <img src="ropa.jpg" alt="Proyecto 1">
+                    <div class="project-info">
+                        <h3>Tienda de ropa</h3>
+                        <p>Descripción breve del Proyecto 1.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="project-card">
+                <a href="concecionaria.html">
+                    <img src="consecionario-autos.jpg" alt="Proyecto 2">
+                    <div class="project-info">
+                        <h3>Concecionaria de autos</h3>
+                        <p>Descripción breve del Proyecto 2.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="project-card">
+                <a href="../html/cafeteria.html">
+                    <img src="cafe.png" alt="Proyecto 2">
+                    <div class="project-info">
+                        <h3>Cafeteria</h3>
+                        <p>Descripción breve del Proyecto 2.</p>
+                    </div>
+                </a>
+            </div>
+          
+            <!-- Añade más proyectos aquí -->
+        </div>
+        
+    </section>
+
+
+
+    <section id="skills" class="skills">
+        <h2>Habilidades</h2>
+       <div class="card-container">
+        <div class="card">
+          <div class="first-content">
+            <i class="fa-brands fa-html5"></i>
+          </div>
+          <div class="second-content">
+            <p>Experto en HTML, con habilidades para estructurar el contenido de manera semántica y accesible.</p>
+          </div>
+         
+        
+        </div>
+        <div class="card">
+            <div class="first-content">
+                <i class="fa-brands fa-css3-alt"></i>
+            </div>
+            <div class="second-content">
+                <p>Experto en CSS, capaz de crear diseños atractivos y responsivos utilizando Flexbox y Grid.</p>
+
+            </div>
+          
+          
+          </div>
+          <div class="card">
+            <div class="first-content">
+                <i class="fa-brands fa-js"></i>
+            </div>
+            <div class="second-content">
+                <p>Hábil en JavaScript, con experiencia en la creación de interactividad y funcionalidad dinámica en sitios web.</p>
+            </div>
+          
+          
+          </div>
+        </div>
+          
+
+    </section>
+    
+    
+    <section id="contact">
+        <h2>Contacto</h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tu mensaje" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Enviar</button>
+        </form>
+    </section>
+    
+    
+
+
+ 
+</body>
+</html>
